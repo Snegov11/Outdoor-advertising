@@ -1,0 +1,209 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+header {
+    position: relative;
+    background-image: url(/01-maket/img/background_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+}
+header::before {
+    background: linear-gradient(360deg, rgb(167, 167, 167) 0%, rgba(255,255,255,0) 40%);
+    position: absolute;
+    content: '';
+    height: 3%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*Блок меню*/
+.main__wrap {
+    position: relative;
+    width: 1300px;
+    margin: auto;
+}
+.main__wrap_menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+.menu__items {
+    margin: 0;
+    margin-right: 40px;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 465px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.06em;
+  }
+.menu__items a {
+    color:white;
+}
+.menu__items_cont .menu__items li {
+    display: inline-block;
+    position: relative;
+    padding-top: 23px;
+}
+.menu__items_cont .menu__items li::after {
+    content: '';
+    width: 10%;
+    height: 2px;
+    background:white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:0;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+.menu__items_cont .menu__items li:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+.logo {
+    margin-left: 10px;
+    margin-top: 23px;
+}
+.nav__contacts {
+    cursor: default;
+    margin-top: 10px;
+    background: url(/icon/phone.png) no-repeat left center;
+    background-size: 21px; 
+    display:inline-block;
+    vertical-align:bottom;
+    padding-left: 60px;
+    padding-right: 30px;
+}
+.nav__contacts p {
+    padding-left: 20px;
+}
+.nav__contacts_phone {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.06em;
+    color: white;
+    margin: 0px;
+}
+.nav__contacts_time {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.06em;
+    color: white;
+    margin: 0px;
+}
+/*Главный экран*/
+.main__screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.main__screen_img {
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.main__screen_text {
+    width: 500px;
+    height: 195px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.06em;
+    color: #ffffff;
+    border: 4.9px solid #ffffff;
+}
+.main__screen_text p {
+    margin: 20px;
+    margin-left: 33px;
+    margin-top: 26px;
+}
+/*Блок навигации*/
+.main__wrap_nav {
+    margin: auto;
+    width: 1300px;
+}
+.block__nav_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__list_item {
+    border: 1px solid #670e7a;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.nav__list_item img {
+    padding-top: 40px;
+}
+.list__item_img-1 {
+    margin-top: 18px;
+}
+.list__item_img-3 {
+    margin-top: 9px;
+}
+.list__item_img-2 {
+    margin-top: 25px;
+}
+.list__item_img-4 {
+    margin-top: 15px;
+}
+.nav__list_item-border {
+    border-right: 0px;
+}
+.main__wrap_nav ul li:hover {
+    background: #ce74f165;
+    cursor: pointer;
+}
+.main__wrap_nav p {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.06em;
+    color: #666666;
+    margin-bottom: 30px;
+}
+.main__wrap_nav .block__nav_list li::after {
+    content: '';
+    width: 10%;
+    height: 7px;
+    background:#670e7a;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:1;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+.main__wrap_nav .block__nav_list li:hover::after {
+    opacity: 1;
+    width: 100%;
+}
