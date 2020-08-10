@@ -1,5 +1,5 @@
 //Модальное окно вызовы замерщика
-var button_tech = document.querySelector(".wrap_content_button");
+var button_tech = document.querySelector(".technician__wrap-button");
 var popup_tech = document.querySelector(".modal-technician");
 var close_tech = popup_tech.querySelector(".modal-close");
 var name_tech = popup_tech.querySelector("[name=name]");
@@ -38,7 +38,7 @@ window.addEventListener("keydown", function (evt) {
 
 //Модальное окно Бесплатная консультация
 
-var button_cons = document.querySelector(".contacts__cont_text-button");
+var button_cons = document.querySelector(".contacts__cont-button");
 var popup_cons = document.querySelector(".modal-consult");
 var close_cons = popup_cons.querySelector(".modal-close");
 var name_cons = popup_cons.querySelector("[name=name]");

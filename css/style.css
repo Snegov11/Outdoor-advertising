@@ -24,19 +24,19 @@ header::before {
 }
 
 /*Блок меню*/
-.main__wrap {
+.main-wrap {
     position: relative;
     width: 1200px;
     margin: auto;
 }
-.main__wrap_menu {
+.main-wrap__menu {
     display: flex;
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
     align-items: center;
 }
-.menu__items {
+.main-wrap__menu-items {
     margin: 0;
     margin-right: 40px;
     margin-top: 10px;
@@ -53,15 +53,15 @@ header::before {
     text-transform: uppercase;
     letter-spacing: -0.06em;
   }
-.menu__items a {
+.main-wrap__menu-items a {
     color:white;
 }
-.menu__items_cont .menu__items li {
+.main-wrap__menu .main-wrap__menu-items li {
     display: inline-block;
     position: relative;
     padding-top: 23px;
 }
-.menu__items_cont .menu__items li::after {
+.main-wrap__menu .main-wrap__menu-items li::after {
     content: '';
     width: 10%;
     height: 4px;
@@ -74,15 +74,15 @@ header::before {
     opacity: 0;
     transition-duration: 0.3s;
 }
-.menu__items_cont .menu__items li:hover::after {
+.main-wrap__menu .main-wrap__menu-items li:hover::after {
     opacity: 1;
     width: 100%;
 }
-.logo {
+.main-wrap__logo {
     margin-left: 10px;
     margin-top: 23px;
 }
-.nav__contacts {
+.main-wrap__contacts {
     cursor: default;
     margin-top: 10px;
     margin-left: 70px;
@@ -93,10 +93,10 @@ header::before {
     padding-left: 10px;
     color: white;
 }
-.nav__contacts p {
+.main-wrap__contacts p {
     padding-left: 20px;
 }
-.nav__contacts_phone {
+.main-wrap__contacts-phone {
     font-size: 30px;
     line-height: 1.2;
     font-weight: 400;
@@ -105,7 +105,7 @@ header::before {
     color: white;
     margin: 0px;
 }
-.nav__contacts_time {
+.main-wrap__contacts-time {
     font-size: 12px;
     line-height: 1.2;
     font-weight: 400;
@@ -115,17 +115,17 @@ header::before {
 }
 
 /*Главный экран*/
-.main__screen {
+.main-wrap__first-screen {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 70px;
 }
-.main__screen_img {
+.main-wrap__screen-img {
     margin-right: 150px;
     margin-bottom: 50px;
 }
-.main__screen_text {
+.main-wrap__screen-text {
     width: 500px;
     height: 195px;
     margin-bottom: 30px;
@@ -138,32 +138,32 @@ header::before {
     border: 4.9px solid #ffffff;
     margin-right: 50px;
 }
-.main__screen_text p {
+.main-wrap__screen-text p {
     margin: 20px;
     margin-left: 33px;
     margin-top: 26px;
 }
 
 /*Блок навигации*/
-.main__wrap_nav {
+.main-wrap__nav {
     margin: auto;
     width: 1200px;
 }
-.main__wrap_nav-cont {
+.main-wrap__nav-cont {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.wrap__nav-cont_item {
+.main-wrap__cont-item {
     text-align: center;
     width: 300px;
     position: relative;
 }
-.wrap__nav-cont_item img {
+.main-wrap__cont-item img {
     height: 200px;
     margin-top: 30px;
 }
-.wrap__nav-cont_item p {
+.main-wrap__cont-item p {
     font-size: 18px;
     line-height: 1.2;
     font-weight: 600;
@@ -175,13 +175,13 @@ header::before {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.wrap__nav-cont_item:hover {
+.main-wrap__cont-item:hover {
     background: #ce74f165;
     cursor: pointer;
     border-radius: 3px;
     transition-duration: 0.3s;
 }
-.wrap__nav-cont_item::after {
+.main-wrap__cont-item::after {
     content: '';
     width: 10%;
     height: 7px;
@@ -194,7 +194,7 @@ header::before {
     opacity: 0;
     transition-duration: 0.3s;
 }
-.wrap__nav-cont_item:hover::after {
+.main-wrap__cont-item:hover::after {
     opacity: 1;
     width: 100%;
     transition-duration: 0.3s;
@@ -247,10 +247,10 @@ header::before {
     margin: 0;
     margin-bottom: 60px;
 }
-.cont__item_text-6 {
+.services__cont-text {
     padding-top: 45px;
 }
-.services__cont_item {
+.services__cont-item {
     width: 400px;
     height: 260px;
     display: flex;
@@ -260,7 +260,7 @@ header::before {
     text-align: center;
     transition-duration: 0.2s;
 }
-.services__cont_item i {
+.services__cont-item i {
     font-size: 70px;
     color: #670e7a;
     padding: 100px;
@@ -268,14 +268,14 @@ header::before {
     padding-top: 0;
     margin-top: 50px;
 }
-.services__cont_item:hover {
+.services__cont-item:hover {
     background-color: #670e7a;
     box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.5);
 }
-.services__cont_item:hover i {
+.services__cont-item:hover i {
     color: white;
 }
-.services__cont_item:hover p {
+.services__cont-item:hover p {
     color: white;
 }
 
@@ -302,13 +302,13 @@ header::before {
     width: 1200px;
     margin: auto;
 }
-.technician__wrap_content {
+.technician__wrap-content {
     width: 680px;
     height: 400px;
     padding-top: 90px;
     padding-left: 145px;
 }
-.technician__wrap_content h2 {
+.technician__wrap-content h2 {
     font-size: 35px;
     line-height: 1.2;
     font-weight: 700;
@@ -318,7 +318,7 @@ header::before {
     padding: 0;
     margin: 0;
 }
-.wrap__content_first-p {
+.technician__wrap-fp {
     font-size: 35px;
     line-height: 1.2;
     font-weight: 400;
@@ -330,7 +330,7 @@ header::before {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.wrap__content_second-p {
+.technician__wrap-sp {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 400;
@@ -340,7 +340,7 @@ header::before {
     padding: 0;
     margin: 0;
 }
-.wrap_content_button {
+.technician__wrap-button {
     margin-top: 90px;
     margin-bottom: 60px;
     padding: 20px;
@@ -353,7 +353,7 @@ header::before {
     letter-spacing: -0.06em;
     color: #cb0529;
 }
-.wrap_content_button:hover {
+.technician__wrap-button:hover {
     background-color: #670e7a;
     box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.5);
     color: white;
@@ -371,17 +371,17 @@ header::before {
     align-items: center;
     flex-wrap: wrap;
 }
-.advantages__cont_item {
+.advantages__cont-item {
     width: 49%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 75px;
 }
-.advantages__cont_item img {
+.advantages__cont-item img {
     margin-right: 30px;
 }
-.advantages__cont_item-text h3 {
+.advantages__cont-text h3 {
     margin: 0;
     padding: 0;
     margin-bottom: 25px;
@@ -392,7 +392,7 @@ header::before {
     letter-spacing: -0.06em;
     color: #670e7a;
 }
-.advantages__cont_item-text p {
+.advantages__cont-text p {
     margin: 0;
     padding: 0;
     font-size: 17px;
@@ -468,16 +468,15 @@ header::before {
     flex-wrap: wrap;
     margin: auto;
 }
-.clients__cont_item {
+.clients__cont-item {
     width: 33%;
     text-align: center;
     margin-bottom: 80px;
 }
-.clients__cont_item img {
+.clients__cont-item img {
     width: 50%;
     margin: auto;
 }
-
 
 /*Блок производство*/
 .manufactory {
@@ -549,7 +548,7 @@ header::before {
     margin: 0;
     padding-bottom: 45px;
 }
-.manufactory__cont_link {
+.manufactory__cont-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -561,20 +560,20 @@ header::before {
     transition-duration: 0.3s;
     margin: auto;
 }
-.manufactory__cont_link:hover {
+.manufactory__cont-link:hover {
     background: white;
     color: #670e7a;
     box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.5);
     border-radius: 5px;
 }
-.manufactory__cont_link:hover p {
+.manufactory__cont-link:hover p {
     color: #670e7a;
 }
-.manufactory__cont_link i {
+.manufactory__cont-link i {
     padding-right: 20px;
     font-size: 20px;
 }
-.manufactory__cont_link p {
+.manufactory__cont-link p {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
@@ -597,7 +596,7 @@ header::before {
     justify-content: center;
     align-items: center;
 }
-.contacts__cont_map {
+.contacts__cont-map {
     border: 5px solid #670e7a;
     margin-right: 70px;
     width: 440px;
@@ -606,7 +605,7 @@ header::before {
     background-position: center;
     background-size: cover;
 }
-.contacts__cont_text-title {
+.contacts__cont-title {
     font-size: 35px;
     line-height: 1.2;
     font-weight: 800;
@@ -624,13 +623,13 @@ header::before {
     color: #cb0529;
     margin-top: 45px;
 }
-.contacts__cont_text ul {
+.contacts__cont-text ul {
     list-style: none;
     padding: 0;
     margin: 0;
     margin-left: 20px;
 }
-.contacts__cont_text ul li {
+.contacts__cont-text ul li {
     padding-left: 20px;
     font-size: 20px;
     line-height: 1.2;
@@ -638,18 +637,18 @@ header::before {
     letter-spacing: -0.06em;
     color: #333333;
 }
-.contacts__cont_list-item-1 {
+.contacts__cont-address {
     list-style-image: url(/icon/icon_address.png);
     padding-bottom: 30px;
 }
-.contacts__cont_list-item-2 {
+.contacts__cont-phone {
     list-style-image: url(/icon/icon_phone.png);
     padding-bottom: 30px;
 }
-.contacts__cont_list-item-3 {
+.contacts__cont-email {
     list-style-image: url(/icon/icon_email.png);
 }
-.contacts__cont_text-button {
+.contacts__cont-button {
     width: 380px;
     height: 70px;
     padding: 0;
@@ -663,7 +662,7 @@ header::before {
     letter-spacing: -0.06em;
     color: #ffffff;
 }
-.contacts__cont_text-button:hover {
+.contacts__cont-button:hover {
     background: #670e7a;
     color: white;
     box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.5);
